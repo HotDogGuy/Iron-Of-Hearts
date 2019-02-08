@@ -1,0 +1,31 @@
+focus_tree = {
+	id = mau_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = MAU
+		}
+	}
+
+	focus = {
+		id = mau_awaken
+		icon = GFX_goal_generic_dangerous_deal:0
+		text = mau_awaken_desc
+	    $prerequisite = { focus = ITA_industrial_effort_2 }
+		x = 5
+		y = 0
+		#relative_position_id = ITA_industrial_effort_2
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {triumphant_will}
+		}
+	}
