@@ -1,5 +1,5 @@
 name="Iron of Hearts"
-path="\steamapps\common\Hearts of Iron IV\mod"
+path="mod/Iron Of Hearts"
 tags={
         "Fixes"
 }
