@@ -62,7 +62,7 @@ create_country_leader = {
 	desc = "POLITICS_KING_JEFFERY_DESC"
 	picture = "Portrait_MAU_King_Jeffery.dds"
 	expire = "1950.1.1"
-	ideology = fascism
+	ideology = "fascism"
 	traits = {
 	dealbroker
 	}
