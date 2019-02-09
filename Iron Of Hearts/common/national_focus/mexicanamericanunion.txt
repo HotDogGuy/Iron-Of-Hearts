@@ -13,7 +13,7 @@ focus_tree = {
 	focus = {
 		id = mau_awaken
 		icon = GFX_goal_generic_dangerous_deal:0
-		text = mau_awaken_desc
+		text = mau_awaken
 	    #prerequisite = { focus = ITA_industrial_effort_2 }
 		x = 5
 		y = 0
