@@ -14,7 +14,7 @@ focus_tree = {
 		id = mau_awaken
 		icon = GFX_goal_generic_dangerous_deal:0
 		text = mau_awaken_desc
-	    $prerequisite = { focus = ITA_industrial_effort_2 }
+	    #prerequisite = { focus = ITA_industrial_effort_2 }
 		x = 5
 		y = 0
 		#relative_position_id = ITA_industrial_effort_2
@@ -26,6 +26,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = {triumphant_will}
+			add_ideas = { triumphant_will }
 		}
 	}
