@@ -2425,15 +2425,3 @@ leader_traits = {
 		}
 	}
 }
-
-	economic_reformer = {
-		random = no
-
-		trade_laws_cost_factor = -0.25
-		mobilization_laws_cost_factor = -0.25
-		economy_cost_factor = -0.25
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
