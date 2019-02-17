@@ -13,8 +13,8 @@ state=
 			2077 = {
 				naval_base = 1
 			}
-		add_core_of = BRE
 		}
+		add_core_of = BRE
 	}
 	provinces= { 2077 }
 }
