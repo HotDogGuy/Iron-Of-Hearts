@@ -1,4 +1,4 @@
-capital = 317
+﻿capital = 317
 
 #
 set_technology = {
