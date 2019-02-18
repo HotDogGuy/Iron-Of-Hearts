@@ -1381,3 +1381,7 @@
  MAU_neutrality:0 "Kingdom of Mexico-America"
  MAU_communism:0 "Mexican American Union"
  MAU_democratic:0 "You weren't supposed to go this ideology lol"
+ BRE_fascism:0 "Banana Empire"
+ BRE_democratic:0 "Banana Republic"
+ BRE_communism:0 "Socialist Republic of Bananas"
+ BRE_neutrality:0 "Kingdom of Bananas"
