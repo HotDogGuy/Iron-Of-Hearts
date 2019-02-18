@@ -1,6 +1,6 @@
 ﻿name="Iron of Hearts"
 path="mod/Iron Of Hearts"
 tags={
-        "Fixes"
+        "Alternative History"
 }
 supported_version="1.5.*"
