@@ -1,6 +1,6 @@
 political_advisor = {
 
-		BRE_eduardo_hay = {
+		BRE_pf = {
 
 			picture = generic_political_advisor_south_america_1
 
@@ -11,7 +11,7 @@ political_advisor = {
 			traits = { popular_figurehead }
 		}
 
-		BRE_plutarco_e_calles = {
+		BRE_pot = {
 
 			picture = generic_political_advisor_south_america_2
 				
@@ -22,7 +22,7 @@ political_advisor = {
 			traits = { prince_of_terror }
 		}
 
-		BRE_manuel_avila_camacho = {
+		BRE_coi = {
 
 			picture = generic_political_advisor_south_america_3
 			
@@ -36,7 +36,7 @@ political_advisor = {
 
 	theorist = {
 
-		BRE_enrique_estrada = {
+		BRE_mt = {
 					
 
 			allowed = {
@@ -52,7 +52,7 @@ political_advisor = {
 			traits = { military_theorist }
 		}
 
-		BRE_agustin_olachea = {
+		BRE_awt = {
 					
 			picture = generic_air_europe_3
 
@@ -71,7 +71,7 @@ political_advisor = {
 	}
 	army_chief = {
 
-		matias_santos_ramos = {
+		 BRE_acd2 = {
 			
 			picture = generic_army_europe_4
 			
@@ -86,7 +86,7 @@ political_advisor = {
 			}
 		}
 
-		gilberto_lemon = {
+		BRE_acd2 = {
 			
 			picture = generic_army_europe_5
 			
@@ -105,7 +105,7 @@ political_advisor = {
 
 	air_chief = {
 
-		antonio_cardenas_rodriguez = {
+		BRE_acr2 = {
 			
 			picture = generic_air_europe_2
 			
@@ -120,7 +120,7 @@ political_advisor = {
 			}
 		}
 
-		efrain_rodriguez_berrios = {
+		BRE_acgs2 = {
 			
 			picture = generic_air_europe_3
 
@@ -138,7 +138,7 @@ political_advisor = {
 
 	navy_chief = {
 
-		victor_tapia_briones = {
+		BRE_ncm2 = {
 			
 			picture = generic_navy_europe_2
 			
@@ -175,7 +175,7 @@ political_advisor = {
 
 	high_command = {
 
-		BRE_jesus_garza_siller = {
+		BRE_asb2 = {
 			
 			picture = generic_air_europe_1
 			
@@ -191,7 +191,7 @@ political_advisor = {
 			}
 		}
 	
-		BRE_hector_meixueiro = {
+		BRE_nnad2 = {
 			
 			picture = generic_navy_europe_1
 
@@ -206,7 +206,7 @@ political_advisor = {
 			}
 		}
 
-		BRE_pablo_m_valenzuela = {
+		BRE_ar2 = {
 			
 			picture = generic_army_europe_3
 			
@@ -222,7 +222,7 @@ political_advisor = {
 			}
 		}
 
-		BRE_matias_ramos = {
+		BRE_aa2 = {
 			
 			picture = generic_army_europe_2
 			
