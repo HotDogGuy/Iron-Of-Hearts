@@ -12,6 +12,8 @@ ideas = {
 				always = yes
 			}
 
+			visible = { has_government = democratic }
+			
 			removal_cost = -1
 
 			modifier = {
