@@ -1,0 +1,25 @@
+ideas = {
+	
+	country = {
+		memories_of_empire = {
+
+
+			allowed = {
+				original_tag = BRE
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fascism_drift = 0.3
+				stability_factor = -0.05
+				army_core_attack_factor = 0.1
+				army_core_defense_factor = 0.1
+			}
+		}
+	}
+}
