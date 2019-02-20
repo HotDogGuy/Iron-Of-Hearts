@@ -1,7 +1,7 @@
 ideas = {
 	
 	country = {
-		mexican_discrimination = {
+		mexican_opposition = {
 
 			removal_cost = -1
 
