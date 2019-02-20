@@ -80,4 +80,6 @@ create_country_leader = {
 	ideology = despotism
 	traits = {
 	}
-}	
+}
+
+add_ideas = memories_of_empire	
