@@ -73,3 +73,5 @@ create_country_leader = {
 	
 	}
 }	
+
+add_ideas = mexican_discrimination
