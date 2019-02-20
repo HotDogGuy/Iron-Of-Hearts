@@ -2,19 +2,15 @@ ideas = {
 	
 	country = {
 		memories_of_empire = {
+			designer = no
 
+			removal_cost = -1
 
-			allowed = {
-				original_tag = BRE
-			}
+			allowed = { original_tag = BRE}
 
-			allowed_civil_war = {
-				always = yes
-			}
+			allowed_civil_war = { always = yes }
 
 			visible = { always }
-			
-			removal_cost = -1
 
 			modifier = {
 				fascism_drift = 0.3
