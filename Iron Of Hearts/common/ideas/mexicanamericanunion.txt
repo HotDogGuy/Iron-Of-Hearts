@@ -3,22 +3,21 @@ ideas = {
 	country = {
 		mexican_discrimination = {
 
-		removal_cost = -1
+			removal_cost = -1
 
-		allowed = { original_tag = MAU }
+			allowed = { original_tag = MAU }
 
-		allowed = { always = yes }
+			allowed = { always = yes }
 
-		visible = { always = yes }
+			visible = { always = yes }
 
-		modifier = {
-			conscription = -0.2
-			stability_factor = -0.15
-			war_support_factor = -0.15
-			consumer_goods_factor = 0.05
-			political_power_factor = -0.1
-
+			modifier = {
+				conscription = -0.2
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.1
+			}
 		}
-	  }
 	}
 }
