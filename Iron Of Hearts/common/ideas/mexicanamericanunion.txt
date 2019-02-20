@@ -7,7 +7,7 @@ ideas = {
 
 			allowed = { original_tag = MAU }
 
-			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
 
 			visible = { always = yes }
 
