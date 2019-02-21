@@ -19,5 +19,23 @@ ideas = {
 				political_power_factor = -0.1
 			}
 		}
+		mexican_opposition_supressed = {
+
+			removeal_cost = -1
+
+			allowed = { has_completed_focus = MAU_clamp_down }
+
+			allowed_civil_war = { always = yes }
+
+			visible = { always = yes }
+
+			modifier = {
+				conscription_factor = -0.15
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.15
+			}
+		}
 	}
 }
