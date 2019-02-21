@@ -18,6 +18,7 @@ focus_tree = {
 		mutually_exclusive = { MAU_encourage_thinking }
 		x = 10
 		y = 0
+		cost = 10
 
 		completion_reward = {
 			add_research_slot = -1
@@ -33,6 +34,7 @@ focus_tree = {
 		mutually_exclusive = { MAU_encourage_thinking }
 		x = 12
 		y = 0
+		cost = 10
 
 		completion_reward = {
 			add_political_power = 50

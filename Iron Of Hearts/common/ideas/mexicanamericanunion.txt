@@ -23,7 +23,7 @@ ideas = {
 
 			removeal_cost = -1
 
-			allowed = { has_completed_focus = MAU_clamp_down }
+			allowed = { original_tag = MAU }
 
 			allowed_civil_war = { always = yes }
 
