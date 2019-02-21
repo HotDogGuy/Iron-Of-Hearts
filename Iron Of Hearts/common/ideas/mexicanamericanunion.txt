@@ -19,7 +19,7 @@ ideas = {
 				political_power_factor = -0.1
 			}
 		}
-		mexican_opposition_supressed = {
+		mexican_opposition_suppressed = {
 
 			removeal_cost = -1
 

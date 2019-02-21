@@ -23,7 +23,7 @@ focus_tree = {
 			add_research_slot = -1
 			swap_ideas = {
 				remove_idea = mexican_opposition 
-				add_idea = mexican_opposition_supressed 
+				add_idea = mexican_opposition_suppressed 
 			}
 		}
 	}
@@ -38,7 +38,7 @@ focus_tree = {
 			add_political_power = 50
 			swap_ideas = {
 				remove_idea = mexican_opposition 
-				add_idea = mexican_opposition_supressed 
+				add_idea = mexican_opposition_appeased
 			}
 		}
 	}
