@@ -1,5 +1,5 @@
 ﻿name="Iron of Hearts"
-path="mod/Iron Of Hearts: Official"
+path="mod/Iron Of Hearts"
 tags={
         "Alternative History"
 }
