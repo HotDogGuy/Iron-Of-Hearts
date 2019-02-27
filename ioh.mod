@@ -1,4 +1,4 @@
-﻿name="Iron of Hearts: Github"
+﻿name="Iron of Hearts"
 path="mod/Iron Of Hearts"
 tags={
         "Alternative History"
