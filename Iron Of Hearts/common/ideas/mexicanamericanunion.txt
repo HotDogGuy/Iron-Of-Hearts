@@ -1,0 +1,41 @@
+ideas = {
+	
+	country = {
+		mexican_opposition = {
+
+			removal_cost = -1
+
+			allowed = { original_tag = MAU }
+
+			allowed_civil_war = { always = yes }
+
+			visible = { always = yes }
+
+			modifier = {
+				conscription_factor = -0.2
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.1
+			}
+		}
+		mexican_opposition_suppressed = {
+
+			removal_cost = -1
+
+			allowed = { original_tag = MAU }
+
+			allowed_civil_war = { always = yes }
+
+			visible = { always = yes }
+
+			modifier = {
+				conscription_factor = -0.15
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.15
+			}
+		}
+	}
+}

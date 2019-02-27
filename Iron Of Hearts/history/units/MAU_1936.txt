@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Infantry Division"
-	division_name_group = USA_INF_1
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
