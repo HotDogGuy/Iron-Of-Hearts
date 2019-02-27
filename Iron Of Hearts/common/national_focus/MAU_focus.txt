@@ -44,4 +44,46 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = MAU_suppress_opposition
+		icon = GFX_goal_unknown
+		x = 10
+		y = 1
+		cost = 10
+		prerequisite = { focus = MAU_clamp_down }
+
+		completion_reward = {
+			add_stability = .05
+		}
+	}
+	focus = {
+		id = MAU_aggressive_focus
+		icon = GFX_goal_unknown
+		x = 10
+		y = 2
+		cost = 10
+		prerequisite = { focus = MAU_suppress_opposition }
+		mutually_exclusive = { focus = MAU_peaceful_focus }
+
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = -0.1
+			create_faction = "American Union"
+		}
+	}
+	focus = {
+		id = MAU_peaceful_focus
+		icon = GFX_goal_unknown
+		x = 8
+		y = 2
+		cost = 10
+		prerequisite = { focus = MAU_suppress_opposition }
+		mutually_exclusive = { focus = MAU_aggressive_focus }
+
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			create_faction = "North American Union"
+		}
+	}
 }
