@@ -95,7 +95,6 @@ focus_tree = {
 		prerequisite = { focus = MAU_peaceful_focus }
 
 		completion_reward = {
-			give_gurantee = CAN
 			puppet = CAN
 			add_to_faction = CAN
 		}
