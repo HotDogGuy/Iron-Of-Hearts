@@ -86,4 +86,18 @@ focus_tree = {
 			create_faction = "North American Union"
 		}
 	}
+	focus = {
+		id = MAU_support_canada
+		icon = GFX_goal_unknown
+		x = 8
+		y = 3
+		cost = 10
+		prerequisite = { focus = MAU_peaceful_focus }
+
+		completion_reward = {
+			give_gurantee = CAN
+			puppet = CAN
+			add_to_faction = CAN
+		}
+	}
 }
