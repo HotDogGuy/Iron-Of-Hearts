@@ -13,90 +13,18 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = MAU_clamp_down
+		id = MAU_reform_government
 		icon = GFX_goal_unknown
-		mutually_exclusive = { focus = MAU_encourage_thinking }
 		x = 10
 		y = 0
 		cost = 10
-
-		completion_reward = {
-			add_research_slot = -1
-			swap_ideas = {
-				remove_idea = mexican_opposition 
-				add_idea = mexican_opposition_suppressed 
-			}
-		}
-	}
-	focus = {
-		id = MAU_encourage_thinking
-		icon = GFX_goal_unknown
-		mutually_exclusive = { focus = MAU_encourage_thinking }
-		x = 12
-		y = 0
-		cost = 10
-
-		completion_reward = {
-			add_political_power = 50
-			swap_ideas = {
-				remove_idea = mexican_opposition 
-				add_idea = mexican_opposition_appeased
-			}
-		}
-	}
-	focus = {
-		id = MAU_suppress_opposition
-		icon = GFX_goal_unknown
-		x = 10
-		y = 1
-		cost = 10
-		prerequisite = { focus = MAU_clamp_down }
 
 		completion_reward = {
 			add_stability = .05
-		}
-	}
-	focus = {
-		id = MAU_aggressive_focus
-		icon = GFX_goal_unknown
-		x = 10
-		y = 2
-		cost = 10
-		prerequisite = { focus = MAU_suppress_opposition }
-		mutually_exclusive = { focus = MAU_peaceful_focus }
-
-		completion_reward = {
-			add_stability = -0.1
-			add_war_support = -0.1
-			create_faction = "American Union"
-		}
-	}
-	focus = {
-		id = MAU_peaceful_focus
-		icon = GFX_goal_unknown
-		x = 8
-		y = 2
-		cost = 10
-		prerequisite = { focus = MAU_suppress_opposition }
-		mutually_exclusive = { focus = MAU_aggressive_focus }
-
-		completion_reward = {
-			add_stability = 0.1
-			add_war_support = 0.1
-			create_faction = "North American Union"
-		}
-	}
-	focus = {
-		id = MAU_support_canada
-		icon = GFX_goal_unknown
-		x = 8
-		y = 3
-		cost = 10
-		prerequisite = { focus = MAU_peaceful_focus }
-
-		completion_reward = {
-			puppet = CAN
-			add_to_faction = CAN
+			custom_effect_tooltip = MAU_reform_focus
+			hidden_effect = {
+				country_event = MAU_reform.1 days = 5
+			}
 		}
 	}
 }
