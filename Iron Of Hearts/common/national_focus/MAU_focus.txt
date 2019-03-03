@@ -22,9 +22,6 @@ focus_tree = {
 		completion_reward = {
 			add_stability = .05
 			custom_effect_tooltip = MAU_reform_focus
-			hidden_effect = {
-				country_event = MAU_reform.1 days = 5
-			}
 		}
 	}
 }

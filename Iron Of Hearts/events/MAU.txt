@@ -5,6 +5,7 @@ country_event = {
 	id = MAU_reform.1
 	title = MAU_reform.1.t
 	desc = MAU_reform.1.desc
+	picture = GFX_report_event_election_vote
 
 	fire_only_once = yes
 
@@ -15,5 +16,10 @@ country_event = {
 	option = {
 		name = MAU_reform.1.a
 		set_country_flag = MAU_constitutional_monarchy_reform
+	}
+
+	trigger = {
+		original_tag = MAU
+		has_completed_focus = MAU_reform_government
 	}
 }
