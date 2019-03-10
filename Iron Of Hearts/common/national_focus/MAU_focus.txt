@@ -24,4 +24,19 @@ focus_tree = {
 			custom_effect_tooltip = MAU_reform_focus
 		}
 	}
+	focus = {
+		id = MAU_dictatorship
+		icon = GFX_goal_unknown
+		x = 10
+		y = 2
+		cost = 10
+
+		prerequisite = { MAU_reform_government }
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = MAU
+	}
 }
