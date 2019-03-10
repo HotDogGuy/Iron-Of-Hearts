@@ -20,6 +20,5 @@ country_event = {
 
 	trigger = {
 		original_tag = MAU
-		has_completed_focus = MAU_reform_government
 	}
 }
