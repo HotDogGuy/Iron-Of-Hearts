@@ -33,10 +33,49 @@ focus_tree = {
 
 		prerequisite = { MAU_reform_government }
 
+		mutually_exclusive = {
+			id = MAU_revolutionary_government
+			id = MAU_democracy_returns
+		}
+
 		completion_reward = {
+
 		}
 	}
 	focus = {
-		id = MAU
+		id = MAU_revolutionary_government
+		icon = GFX_goal_unknown
+		x = 12
+		y = 2
+		cost = 10
+
+		prerequisite = { MAU_reform_government }
+
+		mutually_exclusive = {
+			id = MAU_democracy_returns
+			id = MAU_dictatorship
+		}
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = MAU_democracy_returns
+		icon = GFX_goal_unknown
+		x = 14
+		y = 2
+		cost = 10
+
+		prerequisite = { MAU_reform_government }
+
+		mutually_exclusive = { 
+			id = MAU_dictatorship
+			id = MAU_revolutionary_government
+		}
+
+		completion_reward = {
+
+		}
 	}
 }
