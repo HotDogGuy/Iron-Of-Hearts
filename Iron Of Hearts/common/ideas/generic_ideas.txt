@@ -19,7 +19,7 @@ ideas = {
 
 		modifier = {
 			weekly_manpower = 100
-			weekly_war_support = -0.01
+			war_support_weekly = -0.01
 		}
 	}
 }
