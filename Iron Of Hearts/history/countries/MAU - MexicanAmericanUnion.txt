@@ -53,4 +53,4 @@ create_country_leader = {
 }	
 
 add_ideas = mexican_opposition
-add_ideas = zzz_increased_conscription
+add_ideas = zzz_increased_conscription 
