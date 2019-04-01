@@ -1,0 +1,25 @@
+ideas = {
+	zzz_increased_conscription = {
+		designer = no
+
+		picture = GFX_goal_unknown
+
+		cost = 0
+		removal_cost = -1
+
+		allowed = {
+			always = yes
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		visible = { always = yes }
+
+		modifier = {
+			weekly_manpower = 100
+			weekly_war_support = -0.01
+		}
+	}
+}
