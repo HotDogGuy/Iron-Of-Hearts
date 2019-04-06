@@ -41,7 +41,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = boosted_dictatorship
-				days = 15
+				days = 150
 			}
 			set_country_flag = flag_generic_boosted_dictatorship
 		}
@@ -67,7 +67,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = boosted_revolutionary
-				days = 15
+				days = 150
 			}
 			set_country_flag = flag_generic_boosted_revolutionary
 		}
@@ -93,7 +93,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = boosted_democracy
-				days = 15
+				days = 150
 			}
 			set_country_flag = flag_generic_boosted_democracy
 		}
