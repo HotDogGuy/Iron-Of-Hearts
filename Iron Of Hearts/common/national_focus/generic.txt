@@ -1,0 +1,649 @@
+focus_tree = {
+	id = generic
+	continuous_focus_position = { x = 6000 y = 5000 }
+	country = {
+		factor = 1
+	}
+	
+	default = yes
+	
+	focus = {
+		id = generic_government_reform
+		x = 8
+		y = 0
+		icon = GFX_goal_government_icon
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = generic_dictatorship
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = generic_government_reform
+		}
+		relative_position_id = generic_government_reform
+		mutually_exclusive = {
+			focus = generic_revolutionary_government
+			focus = generic_democracy
+		}
+		icon = GFX_focus_generic_strike_at_democracy1
+		ai_will_do = {
+			factor = 0.25
+		}
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = boosted_dictatorship
+				days = 15
+			}
+			set_country_flag = flag_generic_boosted_dictatorship
+		}
+	}
+	
+	focus = {
+		id = generic_revolutionary_government
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = generic_government_reform
+		}
+		relative_position_id = generic_government_reform
+		mutually_exclusive = {
+			focus = generic_dictatorship
+			focus = generic_democracy
+		}
+		icon = GFX_focus_generic_soviet_politics
+		ai_will_do = {
+			factor = 0.25
+		}
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = boosted_revolutionary
+				days = 15
+			}
+			set_country_flag = flag_generic_boosted_revolutionary
+		}
+	}
+	
+	focus = {
+		id = generic_democracy
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = generic_government_reform
+		}
+		relative_position_id = generic_government_reform
+		mutually_exclusive = {
+			focus = generic_dictatorship
+			focus = generic_revolutionary_government
+		}
+		icon = GFX_focus_generic_the_giant_wakes
+		ai_will_do = {
+			factor = 0.5
+		}
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = boosted_democracy
+				days = 15
+			}
+			set_country_flag = flag_generic_boosted_democracy
+		}
+	}
+	
+	focus = {
+		id = generic_closed_economy
+		x = -5
+		y = 2
+		prerequisite = {
+			focus = generic_dictatorship
+		}
+		relative_position_id = generic_government_reform
+		mutually_exclusive = {
+			focus = generic_limited_exports
+		}
+		icon = GFX_focus_mex_privatisation
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_ideas = {
+				idea = closed_economy
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_limited_exports
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = generic_dictatorship
+			focus = generic_revolutionary_government
+		}
+		relative_position_id = generic_government_reform
+		mutually_exclusive = {
+			focus = generic_closed_economy
+			focus = generic_export_focus
+		}
+		icon = GFX_focus_mex_privatisation
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_ideas = {
+				idea = limited_exports
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_export_focus
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = generic_revolutionary_government
+			focus = generic_democracy
+		}
+		relative_position_id = generic_government_reform
+		mutually_exclusive = {
+			focus = generic_limited_exports
+			focus = generic_free_trade
+		}
+		icon = GFX_focus_mex_privatisation
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_ideas = {
+				idea = export_focus
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_free_trade
+		x = 5
+		y = 2
+		prerequisite = {
+			focus = generic_democracy
+		}
+		relative_position_id = generic_government_reform
+		mutually_exclusive = {
+			focus = generic_export_focus
+		}
+		icon = GFX_focus_mex_privatisation
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_ideas = {
+				idea = free_trade
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_government_controlled_economy
+		x = -5
+		y = 3
+		prerequisite = {
+			focus = generic_closed_economy
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_goal_state_economy
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = generic_balanced_policy
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = generic_limited_exports
+			focus = generic_export_focus
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_goal_consolidating_coalitionv2
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = generic_laissez_faire
+		x = 5
+		y = 3
+		prerequisite = {
+			focus = generic_free_trade
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_goal_capitalist_system
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = generic_choosing_our_allies
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = generic_government_controlled_economy
+			focus = generic_balanced_policy
+			focus = generic_laissez_faire
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_goal_generic_alliance
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = generic_join_the_axis
+		x = -3
+		y = 5
+		prerequisite = {
+			focus = generic_choosing_our_allies
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_focus_chi_mission_to_germany
+		available = {
+			has_country_flag = flag_generic_boosted_dictatorship
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			GER = {
+				add_to_faction = ROOT
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_join_the_comintern
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = generic_choosing_our_allies
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		available = {
+			has_country_flag = flag_generic_boosted_revolutionary
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			SOV = {
+				add_to_faction = ROOT
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_join_the_allies
+		x = 3
+		y = 5
+		prerequisite = {
+			focus = generic_choosing_our_allies
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_focus_chi_british_cooperation
+		available = {
+			has_country_flag = flag_generic_boosted_democracy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			ENG = {
+				add_to_faction = ROOT
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_tank_treaties
+		x = -4
+		y = 6
+		prerequisite = {
+			focus = generic_join_the_axis
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_focus_generic_army_tanks2
+		ai_will_do = {	
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_axis_economic_support 
+		x = -2
+		y = 6
+		prerequisite = {
+			focus = generic_join_the_axis
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_goal_factory_complex
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = economic_support
+				days = 60
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_comintern_economic_support 
+		x = 0
+		y = 6
+		prerequisite = {
+			focus = generic_join_the_comintern
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_goal_factory_complex
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = economic_support
+				days = 60
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_allies_economic_support 
+		x = 2
+		y = 6
+		prerequisite = {
+			focus = generic_join_the_allies
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_goal_factory_complex
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = economic_support
+				days = 60
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_naval_treaties
+		x = 4
+		y = 6
+		prerequisite = {
+			focus = generic_join_the_allies
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_goal_navy_decision
+		ai_will_do = {	
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = naval_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = generic_militarism
+		x = -4
+		y = 7
+		prerequisite = {
+			focus = generic_tank_treaties
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_goal_military_academy
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_war_support = 0.15
+		}
+	}
+	
+	focus = {
+		id = generic_axis_foreign_investment
+		x = -2
+		y = 7
+		prerequisite = {
+			focus = generic_axis_economic_support
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_goal_generic_positive_trade_relations_gold
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = foreign_investment
+				days = 60
+			}
+		}
+	}
+
+	focus = {
+		id = generic_comintern_foreign_investment
+		x = 0
+		y = 7
+		prerequisite = {
+			focus = generic_comintern_economic_support
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_goal_generic_positive_trade_relations_gold
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = foreign_investment
+				days = 60
+			}
+		}
+	}
+
+	focus = {
+		id = generic_allies_foreign_investment
+		x = 2
+		y = 7
+		prerequisite = {
+			focus = generic_allies_economic_support
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_goal_generic_positive_trade_relations_gold
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = foreign_investment
+				days = 60
+			}
+		}
+	}
+
+	focus = {
+		id = generic_protector_of_democracy
+		x = 4
+		y = 7
+		prerequisite = {
+			focus = generic_naval_treaties
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_focus_generic_support_the_left_right
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = protector_of_democracy
+				days = 60
+			}
+		}
+	}
+
+	focus = {
+		id = generic_unified_axis_research 
+		x = -3
+		y = 8
+		prerequisite = {
+			focus = generic_militarism
+		}
+		prerequisite = {
+			focus = generic_axis_foreign_investment
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_focus_research2
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = generic_communist_recruitment
+		x = 0
+		y = 8
+		prerequisite = {
+			focus = generic_comintern_foreign_investment
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_focus_prc_agrarian_socialism
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = communist_recruitment
+				days = 60
+			}
+		}
+	}
+
+	focus = {
+		id = generic_unified_allies_research 
+		x = 3
+		y = 8
+		prerequisite = {
+			focus = generic_protector_of_democracy
+		}
+		prerequisite = {
+			focus = generic_allies_foreign_investment
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_focus_research2
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = generic_world_revolution
+		x = -1
+		y = 9
+		prerequisite = {
+			focus = generic_communist_recruitment 
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_goal_revolution
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = world_revolution
+				days = 60
+			}
+		}
+	}
+
+	focus = {
+		id = generic_unified_comintern_research 
+		x = 1
+		y = 9
+		prerequisite = {
+			focus = generic_communist_recruitment
+		}
+		relative_position_id = generic_government_reform
+		icon = GFX_focus_research2
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 10
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+}

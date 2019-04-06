@@ -1,5 +1,138 @@
 ideas = {
 
+	country = {
+		
+		boosted_dictatorship = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.05
+			}
+		}
+		
+		boosted_revolutionary = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.05
+			}
+		}
+		
+		boosted_democracy = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.05
+			}
+		}
+		
+		economic_support = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		foreign_investment = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1 
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
+		protector_of_democracy = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				drift_defence_factor = 0.25	
+			}
+		}
+
+		communist_recruitment = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 1000
+			}
+		}
+
+		world_revolution = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = 0.05
+				drift_defence_factor = 0.5
+			}
+		}
+	}
 	hidden_ideas = {
 
 		continuous_naval_production = {
