@@ -114,3 +114,5 @@ MAN = "countries/Manchukou.txt"
 ###################
 MAU = "countries/MexicanAmericanUnion.txt"
 BRE = "countries/BananaRepublic.txt"
+SCO = "countries/Scotland.txt"
+WLS = "countries/Wales.txt"
