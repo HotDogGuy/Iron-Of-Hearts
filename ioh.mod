@@ -4,4 +4,4 @@ tags={
         "Alternative History"
 }
 picture= "thumb.jpg"
-supported_version="1.5.*"
+supported_version="1.6.*"
